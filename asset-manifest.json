@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bookNbeyond/static/css/main.dc75ce32.chunk.css",
+    "main.js": "/bookNbeyond/static/js/main.b833592a.chunk.js",
+    "main.js.map": "/bookNbeyond/static/js/main.b833592a.chunk.js.map",
+    "runtime-main.js": "/bookNbeyond/static/js/runtime-main.af50d902.js",
+    "runtime-main.js.map": "/bookNbeyond/static/js/runtime-main.af50d902.js.map",
+    "static/js/2.f2ccd7b6.chunk.js": "/bookNbeyond/static/js/2.f2ccd7b6.chunk.js",
+    "static/js/2.f2ccd7b6.chunk.js.map": "/bookNbeyond/static/js/2.f2ccd7b6.chunk.js.map",
+    "static/js/3.4278edd1.chunk.js": "/bookNbeyond/static/js/3.4278edd1.chunk.js",
+    "static/js/3.4278edd1.chunk.js.map": "/bookNbeyond/static/js/3.4278edd1.chunk.js.map",
+    "index.html": "/bookNbeyond/index.html",
+    "static/css/main.dc75ce32.chunk.css.map": "/bookNbeyond/static/css/main.dc75ce32.chunk.css.map",
+    "static/js/2.f2ccd7b6.chunk.js.LICENSE.txt": "/bookNbeyond/static/js/2.f2ccd7b6.chunk.js.LICENSE.txt",
+    "static/media/coding.e20a2e2d.mp4": "/bookNbeyond/static/media/coding.e20a2e2d.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af50d902.js",
+    "static/js/2.f2ccd7b6.chunk.js",
+    "static/css/main.dc75ce32.chunk.css",
+    "static/js/main.b833592a.chunk.js"
+  ]
+}
