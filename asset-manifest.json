@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/booknbeyond.net/static/css/main.dc75ce32.chunk.css",
-    "main.js": "/booknbeyond.net/static/js/main.78c933b1.chunk.js",
-    "main.js.map": "/booknbeyond.net/static/js/main.78c933b1.chunk.js.map",
+    "main.js": "/booknbeyond.net/static/js/main.4a86c2a9.chunk.js",
+    "main.js.map": "/booknbeyond.net/static/js/main.4a86c2a9.chunk.js.map",
     "runtime-main.js": "/booknbeyond.net/static/js/runtime-main.d3afbc6a.js",
     "runtime-main.js.map": "/booknbeyond.net/static/js/runtime-main.d3afbc6a.js.map",
     "static/js/2.19e6b410.chunk.js": "/booknbeyond.net/static/js/2.19e6b410.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.d3afbc6a.js",
     "static/js/2.19e6b410.chunk.js",
     "static/css/main.dc75ce32.chunk.css",
-    "static/js/main.78c933b1.chunk.js"
+    "static/js/main.4a86c2a9.chunk.js"
   ]
 }
