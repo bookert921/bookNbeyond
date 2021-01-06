@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename={window.location.pathname || 'bookNbeyond'} className="App">
+    <Router basename={window.location.pathname || 'bookert921.github.io/bookNbeyond'} className="App">
       <Home />
     </Router>
   );
