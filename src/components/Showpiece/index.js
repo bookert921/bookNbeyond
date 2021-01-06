@@ -32,7 +32,7 @@ const Showpiece = () => {
             <LandingContent>
                 <LandingH1 hideShowpieceH1={hideShowpieceH1}>Let's Connect!</LandingH1>
                 <LandingP hideShowpieceP={hideShowpieceP}>
-                    I am a PERN stack Software Engineer.
+                    I am a Full Stack Software Engineer.
                 </LandingP>
             </LandingContent>
         </ShowpieceContainer>

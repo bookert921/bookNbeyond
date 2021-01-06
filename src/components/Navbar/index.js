@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaInstagram, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, SocialIconLink, SocialIcons, SocialHeader } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, ResumeLink, NavMenu, NavItem, NavLinks, SocialIconLink, SocialIcons, SocialHeader } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggleNav }) => {
@@ -30,7 +30,7 @@ const Navbar = ({ toggleNav }) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>
+                    <NavLogo to="/" onClick={toggleHome} aria-label="home">
                         Booker T. Showers III
                     </NavLogo>
                     <SocialHeader>
@@ -88,6 +88,15 @@ const Navbar = ({ toggleNav }) => {
                             >
                                 Contact
                             </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <ResumeLink
+                                href="/BookerTShowersResume.pdf"
+                                target="_blank"
+                                aria-label="resume"
+                            >
+                                Resume
+                            </ResumeLink>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>

@@ -1,6 +1,6 @@
 // import img from '../../images/img.jpg'
 // import img2 from '../../images/img2.jpg'
-import img3 from '../../images/svg-1.svg'
+// import img3 from '../../images/svg-1.svg'
 // import img4 from '../../images/img3.jpg'
 
 export const HomeObjOne = {
@@ -9,13 +9,8 @@ export const HomeObjOne = {
     lightText: false,
     lightTextDesc: false,
     topLine: 'About Me',
-    headline: 'From Usability Tester to Software Engineer',
-    description: "I began my career as a usability tester with a very unique role. I didn't just test software while others collected data and noted usability issues; All the responsibilies of pinpointing errors and reporting them was my job!And, over time, I found myself wanting to fix some of the issues myself -- either because the development team would lag behind or because some of the issues were just easy enough to fix myself -- but in doing so, and by learning through baby steps, I feel that I've developed a strong sense of what a user wants to see happen and how to make it possible.",
-    imgStart: false,
-    img: img3,
-    alt: 'frame',
-    dark: true,
-    primary: false,
+    headline: 'From Software Tester to Software Engineer',
+    description: "I began my software career as a Software Tester for e-commerce web applications. Over time, I found myself wanting to fix more of the issues and wanting to solve more complex problems. Seeing how overwhelmed some of the developers were on my team, I sought out oppertunities to learn what I could about website development to better aid my developer companions. What began as a mere allowance to fix typos in the HTML, soon became CSS fixed, and eventually I found myself stubbling into JavaScript. By learning through baby steps, I feel that I've developed a strong foundation and a more keen sense of what a user wants to see and how I, now as a developer, can make that happen with fewer errors and a more pleasant experience.",
     darkText: true,
 };
 

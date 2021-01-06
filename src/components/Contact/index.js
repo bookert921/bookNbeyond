@@ -29,11 +29,11 @@ const Contact = () => {
                     <Form onSubmit={sendEmail}>
                         <FormH1>Got a project in mind?</FormH1>
                         <FormLabel htomFor='name'>Name</FormLabel>
-                        <FormInput type='name' placeholder='Jon Carter' name='name' required />
+                        <FormInput type='name' name='name' required />
                         <FormLabel htomFor='email'>Email</FormLabel>
-                        <FormInput type='email' placeholder='Email Address' name='email' required />
+                        <FormInput type='email' name='email' required />
                         <FormLabel htmlFor="subject">Subject</FormLabel>
-                        <FormInput type='text' placeholder='T-1000 Invasion' name='subject' required />
+                        <FormInput type='text' name='subject' required />
                         <FormLabel htmlFor="message">Message</FormLabel>
                         <TextArea type='text' name='message' required />
                         <FormWrap style={{ height: '50px' }}>
@@ -43,6 +43,7 @@ const Contact = () => {
                 </FormContent>
                 <Icon to="/" onClick={toggleHome}>To Top</Icon>
             </FormWrap>
+            <p style={{ textAlign: 'center', paddingBottom: '10px' }}>You can also email me at: <a href="mailto: bookert921@gmail.com">bookert921@gmail.com</a></p>
         </Container>
     )
 }

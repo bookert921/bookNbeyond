@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutRow, AboutWrapper, Column1, Column2, HighlightPoints, HighlightPointsWrapper, Highlights, TextWrapper, Heading, Subtitle, AboutContainer, AboutTitle } from './AboutSectionElements';
+import { AboutRow, Img, ImgWrap, AboutWrapper, Column1, Column2, HighlightPoints, HighlightPointsWrapper, Highlights, TextWrapper, Heading, Subtitle, AboutContainer, AboutTitle, CertificateLink } from './AboutSectionElements';
 
 
 const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, headline, description, img, alt }) => {
@@ -8,7 +8,7 @@ const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, hea
             <AboutContainer lightBg={lightBg} id={id}>
                 <AboutTitle darkText={darkText}>{topLine}</AboutTitle>
                 <AboutWrapper>
-                    <AboutRow imgStart={imgStart}>
+                    <AboutRow>
                         <Column1>
                             <TextWrapper>
                                 <Heading darkText={darkText}>{headline}</Heading>
@@ -16,14 +16,23 @@ const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, hea
                             </TextWrapper>
                         </Column1>
                         <Column2>
+                            <ImgWrap>
+                                <Img src="/postgresql.png" alt="postgres" />
+                                <Img src="/mongodb.png" alt="mongo db" />
+                                <Img src="/nodejs.png" alt="node js" />
+                                <Img src="/javascript.png" alt="javascript" />
+                                <Img src="/react.png" alt="react" />
+                            </ImgWrap>
                             <Highlights>Highlights</Highlights>
                             <HighlightPointsWrapper>
-                                <HighlightPoints darkText={darkText}>Migrated a monolithic Heroku Ruby on Rails API to multiple Scala services hosted on AWS. Delivered ahead of schedule, projected to save $18k/quarter.</HighlightPoints>
-                                <HighlightPoints darkText={darkText}>Presented research and proof-of-concept to convince team to move from Hadoop MR to Spark; reduced nodes by 60% and ran 5-8x faster.</HighlightPoints>
-                                <HighlightPoints darkText={darkText}>Automated test automation in ramp-up to large data center migration, saving hundreds of developer hours. </HighlightPoints>
-                                <HighlightPoints darkText={darkText}>Presented "Understanding the GIL to Prevent Race Conditions" at RubyConf 2016. </HighlightPoints>
-                                <HighlightPoints darkText={darkText}>Awarded patent for novel approach to item normalization in 3rd party catalog data feeds. </HighlightPoints>
+                                <HighlightPoints darkText={darkText}>9+ years Software Testing background.</HighlightPoints>
+                                <HighlightPoints darkText={darkText}>Familiar with Agile methologies.</HighlightPoints>
+                                <HighlightPoints darkText={darkText}>Front-end React framework enthusiast.</HighlightPoints>
+                                <HighlightPoints darkText={darkText}>REST and GrapQL/Apollo with PostgreSQL or MongoDB.</HighlightPoints>
+                                <HighlightPoints darkText={darkText}>Certified Full Stack Engineer through Immesive Software Engineering Course at General Assembly.</HighlightPoints>
+                                <CertificateLink href="/Certificate-of-Completion.pdf">See My Certificate!</CertificateLink>
                             </HighlightPointsWrapper>
+
                         </Column2>
                     </AboutRow>
                 </AboutWrapper>

@@ -94,3 +94,13 @@ export const ProjectCardLink = styled.a`
     text-decoration: none;
     color: #010101;
 `
+
+export const GitHubLink = styled.a`
+    color: #fff;
+    text-decoration: none;
+    
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+`

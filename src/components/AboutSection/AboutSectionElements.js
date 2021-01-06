@@ -28,23 +28,28 @@ export const AboutWrapper = styled.div`
         height: 1000px;
     }
     
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 565px){
         height: 1100px;
     }
     
-    @media screen and (max-width: 490px){
-        height: 1200px;
+    @media screen and (max-width: 500px){
+        height: 1300px;
     }
     
-    @media screen and (max-width: 390px){
-        height: 1800px;
+    @media screen and (max-width: 455px){
+        height: 1500px;
+    }
+    
+    @media screen and (max-width: 410px){
+        height: 1600px;
     }
 `;
 
 export const AboutRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
-    ${'' /* align-items: center; */}
+    align-items: center;
+    ${'' /* In case of image insertion */}
     grid-template-areas: ${({ imgStart }) =>
         imgStart ? `'col2 col1'` : `'col1 col2'`};
     
@@ -120,21 +125,21 @@ export const Subtitle = styled.p`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 300px;
     height: 100%;
     width: 100%;
+    margin-bottom: 35px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 `;
 
 export const Img = styled.img`
-    width: 100%;
-    margin: 0 0 10px 0;
+    width: 50px;
     
-    @media screen and (max-width: 786px) {
-        width: 100%;
-        ${'' /* margin-right: 50px; */}
+    @media screen and (max-width: 385px) {
+        width: 40px;
+        margin-bottom: 45px;
     } 
 `;
 
@@ -147,6 +152,7 @@ export const Highlights = styled.h1`
     
     @media screen and (max-width: 480px){
         font-size: 32px;
+    }
 `
 
 export const HighlightPointsWrapper = styled.div`
@@ -162,5 +168,19 @@ export const HighlightPoints = styled.li`
 
     @media screen and (max-width: 786px) {
         font-size: 16px;
+    }
+`
+
+export const CertificateLink = styled.a`
+    color: #01bf71;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    
+    &:Hover {
+        border-bottom: 3px solid #01bf71;
     }
 `
