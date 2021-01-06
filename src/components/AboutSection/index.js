@@ -1,6 +1,11 @@
 import React from 'react';
 import { AboutRow, Img, ImgWrap, AboutWrapper, Column1, Column2, HighlightPoints, HighlightPointsWrapper, Highlights, TextWrapper, Heading, Subtitle, AboutContainer, AboutTitle, CertificateLink } from './AboutSectionElements';
-
+import Cert from '../../pdfs/Certificate-of-Completion.pdf';
+import PostgresImg from '../../images/postgresql.png';
+import ReactImg from '../../images/react.png';
+import NodeImg from '../../images/nodejs.png';
+import JSImg from '../../images/javascript.png';
+import MongoDBImg from '../../images/mongodb.png';
 
 const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, headline, description, img, alt }) => {
     return (
@@ -17,11 +22,11 @@ const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, hea
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src="/postgresql.png" alt="postgres" />
-                                <Img src="/mongodb.png" alt="mongo db" />
-                                <Img src="/nodejs.png" alt="node js" />
-                                <Img src="/javascript.png" alt="javascript" />
-                                <Img src="/react.png" alt="react" />
+                                <Img src={PostgresImg} alt="postgres" />
+                                <Img src={MongoDBImg} alt="mongo db" />
+                                <Img src={NodeImg} alt="node js" />
+                                <Img src={JSImg} alt="javascript" />
+                                <Img src={ReactImg} alt="react" />
                             </ImgWrap>
                             <Highlights>Highlights</Highlights>
                             <HighlightPointsWrapper>
@@ -30,7 +35,7 @@ const AboutSection = ({ lightBg, id, imgStart, topLine, lightText, darkText, hea
                                 <HighlightPoints darkText={darkText}>Front-end React framework enthusiast.</HighlightPoints>
                                 <HighlightPoints darkText={darkText}>REST and GrapQL/Apollo with PostgreSQL or MongoDB.</HighlightPoints>
                                 <HighlightPoints darkText={darkText}>Certified Full Stack Engineer through Immesive Software Engineering Course at General Assembly.</HighlightPoints>
-                                <CertificateLink href="/Certificate-of-Completion.pdf">See My Certificate!</CertificateLink>
+                                <CertificateLink href={Cert}>See My Certificate!</CertificateLink>
                             </HighlightPointsWrapper>
 
                         </Column2>
