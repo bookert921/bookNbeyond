@@ -2,7 +2,7 @@
   "name": "booknbeyond",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bookert921.github.io/bookNbeyond/",
+  "homepage": "booknbeyond.net/react-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
