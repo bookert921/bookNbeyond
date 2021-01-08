@@ -1,5 +1,18 @@
 import React from 'react';
-import { Container, Form, FormButtom, FormContent, FormH1, FormInput, FormLabel, FormTitle, FormWrap, Icon, TextArea, Text } from './ContactElements'
+import {
+    Container,
+    Form,
+    FormButtom,
+    FormH1,
+    FormInput,
+    FormTitle,
+    FormWrap,
+    Icon,
+    TextArea,
+    Text,
+    ShortInputContainer,
+    LongInputContainer,
+} from './ContactElements';
 import emailjs from 'emailjs-com';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -8,40 +21,64 @@ const Contact = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_USER_ID
+        )
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset()
-    }
+        e.target.reset();
+    };
 
     const toggleHome = () => {
         scroll.scrollToTop();
-    }
+    };
 
     return (
         <Container id="contact">
             <FormTitle>Contact Me</FormTitle>
             <FormWrap>
-                <FormContent>
-                    <Form onSubmit={sendEmail}>
-                        <FormH1>Got a project in mind?</FormH1>
-                        <FormLabel htomFor='name'>Name</FormLabel>
-                        <FormInput type='name' name='name' required />
-                        <FormLabel htomFor='email'>Email</FormLabel>
-                        <FormInput type='email' name='email' required />
-                        <FormLabel htmlFor="subject">Subject</FormLabel>
-                        <FormInput type='text' name='subject' required />
-                        <FormLabel htmlFor="message">Message</FormLabel>
-                        <TextArea type='text' name='message' required />
-                        <FormWrap style={{ height: '50px' }}>
-                            <FormButtom type="submit">Submit</FormButtom>
-                        </FormWrap>
-                    </Form>
-                </FormContent>
-                <Icon to="/" onClick={toggleHome}>To Top</Icon>
+                <Form onSubmit={sendEmail}>
+                    <FormH1>Got a project in mind?</FormH1>
+                    <ShortInputContainer>
+                        <FormInput
+                            placeholder="Name"
+                            type='text'
+                            name='name'
+                            required
+                        />
+                    </ShortInputContainer>
+                    <ShortInputContainer>
+                        <FormInput
+                            placeholder="Email"
+                            type='email'
+                            name='email'
+                            required
+                        />
+                    </ShortInputContainer>
+                    <LongInputContainer>
+                        <FormInput
+                            placeholder="Subject"
+                            type="text"
+                            name="subject"
+                            required
+                        />
+                    </LongInputContainer>
+                    <LongInputContainer>
+                        <TextArea
+                            placeholder="Message"
+                            type="text"
+                            name="message"
+                            required
+                        />
+                    </LongInputContainer>
+                    <FormButtom type="submit">Submit</FormButtom>
+                </Form>
             </FormWrap>
             <Text>
                 You can also email me at: &nbsp;
@@ -49,8 +86,9 @@ const Contact = () => {
                     bookert921@gmail.com
                 </a>
             </Text>
+            <Icon to="/" onClick={toggleHome}>To Top</Icon>
         </Container>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
