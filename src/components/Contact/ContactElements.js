@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     color: #fff;
+    padding: 100px 0;
+    width: 100%;
+    ${'' /* padding: 100px 15px 100px 15px; */}
 
-    background: linear-gradient(180deg, rgba(1, 147, 86, 1), 20%, rgba(10, 201, 122, 1) 100%);
-    
-    @media screen and (max-width: 786px) {
-        padding: 100px 0;
-    }
+    background: linear-gradient(
+        180deg, 
+        rgba(1, 147, 86, 1), 20%, 
+        rgba(10, 201, 122, 1) 100%
+    );
 `
 export const FormTitle = styled.h1`
     font-size: 2.5rem;
     color: #fff;
     text-align: center;
-    padding: 20px;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -39,8 +41,7 @@ export const FormWrap = styled.div`
 `
 
 export const Icon = styled(Link)`
-    margin-left: 32px;
-    margin-top: 32px;
+    margin: 32px 0 0 32px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -107,8 +108,9 @@ export const TextArea = styled.textarea`
 `
 
 export const FormButtom = styled.button`
-    margin: 10px auto;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
     background: #01bf71;
     padding: 16px 0;
     border: none;
@@ -126,9 +128,8 @@ export const FormButtom = styled.button`
     }
 `
 
-export const Text = styled.span`
+export const Text = styled.p`
     text-align: center;
-    margin-top: 20px;
     color: #fff;
     font-size: 14px;
 `

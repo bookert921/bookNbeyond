@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, FormButtom, FormContent, FormH1, FormInput, FormLabel, FormTitle, FormWrap, Icon, TextArea } from './ContactElements'
+import { Container, Form, FormButtom, FormContent, FormH1, FormInput, FormLabel, FormTitle, FormWrap, Icon, TextArea, Text } from './ContactElements'
 import emailjs from 'emailjs-com';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -43,7 +43,12 @@ const Contact = () => {
                 </FormContent>
                 <Icon to="/" onClick={toggleHome}>To Top</Icon>
             </FormWrap>
-            <p style={{ textAlign: 'center', paddingBottom: '10px' }}>You can also email me at: <a href="mailto: bookert921@gmail.com">bookert921@gmail.com</a></p>
+            <Text>
+                You can also email me at: &nbsp;
+                <a href="mailto: bookert921@gmail.com">
+                    bookert921@gmail.com
+                </a>
+            </Text>
         </Container>
     )
 }

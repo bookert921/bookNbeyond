@@ -1,24 +1,12 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
-    height: 700px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #010606;
-
-    @media screen and (max-width: 1100px){
-        height: 990px;
-    }
-
-    @media screen and (max-width: 768px){
-        height: 1300px;
-    }
-
-    @media screen and (max-width: 480px){
-        height: 1300px;
-    }
 `
 
 export const ProjectsWrapper = styled.div`
