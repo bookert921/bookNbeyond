@@ -93,20 +93,19 @@ export const Subtitle = styled.p`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 300px;
-    height: 100%;
-    width: 100%;
+    max-width: 400px;
     margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
 `;
 
 export const Img = styled.img`
+    height: 55px;
     width: 50px;
     
     @media screen and (max-width: 385px) {
+        height: 50px;
         width: 40px;
-        margin-bottom: 45px;
     } 
 `;
 
