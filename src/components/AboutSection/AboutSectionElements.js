@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const AboutContainer = styled.div`
     color: #fff;
     background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    padding: 80px 40px;
 
     @media screen and (max-width: 786px) {
         padding: 80px 40px;
@@ -10,52 +11,25 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutWrapper = styled.div`
-    display: grid;
     z-index: 1;
-    height: 600px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
     justify-content: center;
-
-    @media screen and (max-width: 910px){
-        height: 700px;
-    }
-
-    @media screen and (max-width: 790px){
-        height: 1000px;
-    }
-    
-    @media screen and (max-width: 565px){
-        height: 1100px;
-    }
-    
-    @media screen and (max-width: 500px){
-        height: 1300px;
-    }
-    
-    @media screen and (max-width: 455px){
-        height: 1500px;
-    }
-    
-    @media screen and (max-width: 410px){
-        height: 1600px;
-    }
 `;
 
 export const AboutRow = styled.div`
+    display: -ms-grid;
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    ${'' /* In case of image insertion */}
-    grid-template-areas: ${({ imgStart }) =>
-        imgStart ? `'col2 col1'` : `'col1 col2'`};
+    grid-template-areas: ${({ leftTopFeature }) =>
+        leftTopFeature ? `'col2 col1'` : `'col1 col2'`};
     
     @media screen and (max-width: 786px) {
-        grid-template-areas: ${({ imgStart }) =>
-        imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+        grid-template-areas: ${({ leftTopFeature }) =>
+        leftTopFeature ? `'col2' 'col1'` : `'col1' 'col2'`};
     }
 `;
 
@@ -69,12 +43,6 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
-`;
-
-export const TextWrapper = styled.div`
-    max-width: 540px;
-    padding-top: 0;
-    ${'' /* padding-bottom: 60px; */}
 `;
 
 export const AboutTitle = styled.h1`
@@ -104,7 +72,7 @@ export const Heading = styled.h1`
     
     line-height: 1.1;
     font-weight: 600px;
-    color: ${({ lightText }) => lightText ? '#f7f8fa' : '#010606'};
+    color: ${({ darkText }) => darkText ? '#010606' : '#f7f8fa'};
     
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -131,7 +99,6 @@ export const ImgWrap = styled.div`
     margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
 `;
 
 export const Img = styled.img`
