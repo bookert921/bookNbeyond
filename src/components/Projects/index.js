@@ -14,7 +14,7 @@ const Projects = () => {
                         <ProjectsCard>
                             <ProjectsIcon src={BetterBoothang} />
                             <ProjectsH2>Better Boothang</ProjectsH2>
-                            <ProjectsP>Automate those special, but forgetful, occations with this NodeJS app using Twillio messaging services.</ProjectsP>
+                            <ProjectsP>Automate those special, but forgetful, occations with this NodeJS app using Twilio messaging services.</ProjectsP>
                         </ProjectsCard>
                     </ProjectCardLink>
                     <ProjectCardLink target="_blank" href="https://github.com/enbre/goal-getter-frontend" aria-label="goal app">
