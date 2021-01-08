@@ -16,7 +16,7 @@ export const ProjectsWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
-    
+
     @media screen and (max-width: 1100px){
         grid-template-columns: 1fr 1fr;
         padding: 0 20px;
@@ -24,7 +24,7 @@ export const ProjectsWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0 40px;
     }
 `
 
@@ -32,11 +32,12 @@ export const ProjectsCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    max-height: 340px;
     padding: 20px;
+    max-height: 360px;
+    height: 310px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 
@@ -61,8 +62,7 @@ export const ProjectsIcon = styled.img`
 export const ProjectsH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    ${'' /* color: #000; */}
-    margin-bottom: 64px;
+    margin-bottom: 1.5rem;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
@@ -78,6 +78,7 @@ export const ProjectsP = styled.p`
     font-size: 1rem;
     text-align: center;
 `
+
 export const ProjectCardLink = styled.a`
     text-decoration: none;
     color: #010101;

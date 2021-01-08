@@ -51,7 +51,7 @@ const Projects = () => {
                     </ProjectCardLink>
                 </ProjectsWrapper>
                 <ProjectsP
-                    style={{ color: 'white', marginTop: '50px' }}
+                    style={{ color: 'white', marginTop: '50px', padding: '0 20px' }}
                 >
                     Additional projects can be found on my github: &nbsp;
                     <GitHubLink
