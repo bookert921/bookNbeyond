@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaInstagram, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, ResumeLink, NavMenu, NavItem, NavLinks, SocialIconLink, SocialIcons, SocialHeader } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
-import Resume from '../../pdfs/BookerTShowersResume.pdf';
+import Resume from '../../pdfs/BookersDesignResume.pdf';
 
 const Navbar = ({ toggleNav }) => {
     const [scrollNav, setScrollNav] = useState(false);
