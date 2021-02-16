@@ -1,8 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaInstagram, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, ResumeLink, NavMenu, NavItem, NavLinks, SocialIconLink, SocialIcons, SocialHeader } from './NavbarElements';
+import {
+    FaBars,
+    FaInstagram,
+    FaLinkedin,
+    FaTwitter,
+    FaGithub
+} from 'react-icons/fa'
+/* STYLED COMPONENTS */
+import {
+    Nav,
+    NavbarContainer,
+    NavLogo,
+    MobileIcon,
+    ResumeLink,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    SocialIconLink,
+    SocialIcons,
+    SocialHeader
+} from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
-import Resume from '../../pdfs/BookersDesignResume.pdf';
+
+import Resume from '../../assets/pdfs/BookersDesignResume.pdf';
+import Logo from '../../assets/images/logo.svg';
 
 const Navbar = ({ toggleNav }) => {
     const [scrollNav, setScrollNav] = useState(false);
@@ -31,21 +52,40 @@ const Navbar = ({ toggleNav }) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome} aria-label="home">
+                    <NavLogo
+                        to="/"
+                        onClick={toggleHome}
+                        aria-label="home">
+                        <img
+                            style={{ width: '50px', marginRight: '10px' }}
+                            src={Logo}
+                            alt="brand logo" />
                         Booker T. Showers III
-                    </NavLogo>
+                        </NavLogo>
                     <SocialHeader>
                         <SocialIcons>
-                            <SocialIconLink href="https://github.com/bookert921" target="_blank" aria-label="Github">
+                            <SocialIconLink
+                                href="https://github.com/bookert921"
+                                target="_blank"
+                                aria-label="Github">
                                 <FaGithub />
                             </SocialIconLink>
-                            <SocialIconLink href="https://www.instagram.com/kerbooart/" target="_blank" aria-label="Instagram">
+                            <SocialIconLink
+                                href="https://www.instagram.com/kerbooart/"
+                                target="_blank"
+                                aria-label="Instagram">
                                 <FaInstagram />
                             </SocialIconLink>
-                            <SocialIconLink href="https://twitter.com/BookerT921" target="_blank" aria-label="Twitter">
+                            <SocialIconLink
+                                href="https://twitter.com/BookerT921"
+                                target="_blank"
+                                aria-label="Twitter">
                                 <FaTwitter />
                             </SocialIconLink>
-                            <SocialIconLink href="https://www.linkedin.com/in/bookert921/" target="_blank" aria-label="Linkedin">
+                            <SocialIconLink
+                                href="https://www.linkedin.com/in/bookert921/"
+                                target="_blank"
+                                aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>
                         </SocialIcons>

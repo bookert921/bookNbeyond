@@ -1,12 +1,12 @@
 import React from 'react';
 import { AboutRow, Img, ImgWrap, AboutWrapper, Column1, Column2, HighlightPoints, HighlightPointsWrapper, Highlights, Heading, Subtitle, AboutContainer, AboutTitle, CertificateLink } from './AboutSectionElements';
-import Cert from '../../pdfs/Certificate-of-Completion.pdf';
-import PostgresImg from '../../images/postgresql.png';
-import ReactImg from '../../images/react.png';
-import NodeImg from '../../images/nodejs.png';
-import JSImg from '../../images/javascript.png';
-import MongoDBImg from '../../images/mongodb.png';
-import PythonImg from '../../images/python.png';
+import Cert from '../../assets/pdfs/Certificate-of-Completion.pdf';
+import PostgresImg from '../../assets/images/postgresql.png';
+import ReactImg from '../../assets/images/react.png';
+import NodeImg from '../../assets/images/nodejs.png';
+import JSImg from '../../assets/images/javascript.png';
+import MongoDBImg from '../../assets/images/mongodb.png';
+import PythonImg from '../../assets/images/python.png';
 
 const AboutSection = ({ lightBg, id, topLine, darkText, headline, leftTopFeature }) => {
     return (

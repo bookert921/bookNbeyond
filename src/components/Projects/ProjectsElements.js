@@ -36,8 +36,7 @@ export const ProjectsCard = styled.div`
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
-    max-height: 360px;
-    height: 310px;
+    height: 320px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 

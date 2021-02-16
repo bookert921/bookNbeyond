@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link as LinkS } from 'react-scroll';
 
 export const ShowpieceContainer = styled.div`
     background: #0c0c0c;
@@ -84,5 +85,41 @@ export const LandingP = styled.p`
 
     @media screen and (max-width: 480px){
         font-size: 32px;
+    }
+`
+
+export const AboutBtnContainer = styled.div`
+    margin: 2rem auto;
+    z-index: 1;
+    opacity: ${({ hideShowpieceButton }) => hideShowpieceButton ? 1 : 1 - window.scrollY / 275};
+    transition: 0.5s;
+    animation: slide 3000ms cubic-bezier(0.42, 0.15, 0.22, 0.96) forwards;
+    
+    :after {
+        content: '';
+        width: 0px;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+`
+
+export const AboutButton = styled(LinkS)`
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 10px;
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+    background: transparent;
+    border-image-slice: 1;
+    cursor: pointer;
+    
+    &:hover {
+        background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+        transition: 0.8s all ease;
     }
 `

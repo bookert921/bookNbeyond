@@ -38,11 +38,11 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-column: 1fr;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
     text-align: center;
 
     @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(4, 100px);
     }
 `
 
@@ -60,6 +60,24 @@ export const SidebarLink = styled(LinkS)`
 
     &:hover {
         color: #01bf71;
+        transition: 0.2s ease-in-out;
+    }
+`
+
+export const ResumeLink = styled.a`
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2 ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        color: darkgreen;
         transition: 0.2s ease-in-out;
     }
 `
