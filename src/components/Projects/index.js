@@ -1,8 +1,21 @@
 import React from 'react';
-import { ProjectsContainer, ProjectCardLink, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP, GitHubLink } from './ProjectsElements';
-import BetterBoothang from '../../images/Welcome.png';
-import GoalGetter from '../../images/screenshot1.png';
-import BookNBeyond from '../../images/Home.png';
+/* STYLED COMPONENTS */
+import {
+    ProjectsContainer,
+    ProjectCardLink,
+    ProjectsH1,
+    ProjectsWrapper,
+    ProjectsCard,
+    ProjectsIcon,
+    ProjectsH2,
+    ProjectsP,
+    GitHubLink
+} from './ProjectsElements';
+/* IMAGES */
+import BetterBoothang from '../../assets/images/Welcome.png';
+import GoalGetter from '../../assets/images/screenshot1.png';
+import BookNBeyond from '../../assets/images/Home.png';
+import GoogleBooksApi from '../../assets/images/GoogleBooksApi.png';
 
 const Projects = () => {
     return (
@@ -10,6 +23,19 @@ const Projects = () => {
             <ProjectsContainer id="projects">
                 <ProjectsH1>Projects</ProjectsH1>
                 <ProjectsWrapper>
+                    <ProjectCardLink
+                        target="_blank"
+                        href="https://github.com/bookert921/google-books-search"
+                        aria-label="Book's Google Search App"
+                    >
+                        <ProjectsCard>
+                            <ProjectsIcon src={GoogleBooksApi} />
+                            <ProjectsH2>Book's Google Books</ProjectsH2>
+                            <ProjectsP>
+                                A Create React App utilizing the Google API to find your favorite books in style!
+                            </ProjectsP>
+                        </ProjectsCard>
+                    </ProjectCardLink>
                     <ProjectCardLink
                         target="_blank"
                         href="https://github.com/fostimus/better-boothang"

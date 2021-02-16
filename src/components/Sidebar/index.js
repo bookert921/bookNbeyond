@@ -1,5 +1,6 @@
 import React from 'react';
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SidebarMenu } from './SidebarElements';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SidebarMenu, ResumeLink } from './SidebarElements';
+import Resume from '../../assets/pdfs/BookersDesignResume.pdf';
 
 const SidebarElements = ({ isOpen, toggleNav }) => {
     return (
@@ -18,6 +19,9 @@ const SidebarElements = ({ isOpen, toggleNav }) => {
                     <SidebarLink to="contact" onClick={toggleNav}>
                         Contact
                     </SidebarLink>
+                    <ResumeLink href={Resume} target="_blank" onClick={toggleNav}>
+                        Resume
+                    </ResumeLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
