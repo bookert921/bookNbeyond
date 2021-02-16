@@ -1,31 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.dc75ce32.chunk.css",
-    "main.js": "/static/js/main.c07e4291.chunk.js",
-    "main.js.map": "/static/js/main.c07e4291.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.13b33bc0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.13b33bc0.js.map",
-    "static/js/2.959ff6f4.chunk.js": "/static/js/2.959ff6f4.chunk.js",
-    "static/js/2.959ff6f4.chunk.js.map": "/static/js/2.959ff6f4.chunk.js.map",
-    "static/js/3.4278edd1.chunk.js": "/static/js/3.4278edd1.chunk.js",
-    "static/js/3.4278edd1.chunk.js.map": "/static/js/3.4278edd1.chunk.js.map",
+    "main.js": "/static/js/main.6e510598.chunk.js",
+    "main.js.map": "/static/js/main.6e510598.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.11963d45.js",
+    "runtime-main.js.map": "/static/js/runtime-main.11963d45.js.map",
+    "static/js/2.9eff2bee.chunk.js": "/static/js/2.9eff2bee.chunk.js",
+    "static/js/2.9eff2bee.chunk.js.map": "/static/js/2.9eff2bee.chunk.js.map",
+    "static/js/3.1dfd7cb7.chunk.js": "/static/js/3.1dfd7cb7.chunk.js",
+    "static/js/3.1dfd7cb7.chunk.js.map": "/static/js/3.1dfd7cb7.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.dc75ce32.chunk.css.map": "/static/css/main.dc75ce32.chunk.css.map",
-    "static/js/2.959ff6f4.chunk.js.LICENSE.txt": "/static/js/2.959ff6f4.chunk.js.LICENSE.txt",
-    "static/media/BookersDesignResume.e754d51b.pdf": "/static/media/BookersDesignResume.e754d51b.pdf",
+    "static/js/2.9eff2bee.chunk.js.LICENSE.txt": "/static/js/2.9eff2bee.chunk.js.LICENSE.txt",
+    "static/media/BookersDesignResume.699ab026.pdf": "/static/media/BookersDesignResume.699ab026.pdf",
     "static/media/Certificate-of-Completion.942f347b.pdf": "/static/media/Certificate-of-Completion.942f347b.pdf",
+    "static/media/GoogleBooksApi.9a910b74.png": "/static/media/GoogleBooksApi.9a910b74.png",
     "static/media/Home.db12c7d9.png": "/static/media/Home.db12c7d9.png",
     "static/media/Welcome.362d48a3.png": "/static/media/Welcome.362d48a3.png",
     "static/media/coding.e20a2e2d.mp4": "/static/media/coding.e20a2e2d.mp4",
+    "static/media/logo.bcd9b83a.svg": "/static/media/logo.bcd9b83a.svg",
     "static/media/mongodb.abda0740.png": "/static/media/mongodb.abda0740.png",
     "static/media/postgresql.84b01692.png": "/static/media/postgresql.84b01692.png",
     "static/media/react.6ab7e2e9.png": "/static/media/react.6ab7e2e9.png",
     "static/media/screenshot1.2ed79590.png": "/static/media/screenshot1.2ed79590.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.13b33bc0.js",
-    "static/js/2.959ff6f4.chunk.js",
+    "static/js/runtime-main.11963d45.js",
+    "static/js/2.9eff2bee.chunk.js",
     "static/css/main.dc75ce32.chunk.css",
-    "static/js/main.c07e4291.chunk.js"
+    "static/js/main.6e510598.chunk.js"
   ]
 }
