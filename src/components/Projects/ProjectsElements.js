@@ -36,7 +36,7 @@ export const ProjectsCard = styled.div`
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
-    height: 320px;
+    height: 350px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 
@@ -69,7 +69,7 @@ export const ProjectsH1 = styled.h1`
 `
 
 export const ProjectsH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 `
 

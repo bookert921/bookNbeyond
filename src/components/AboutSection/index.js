@@ -54,7 +54,7 @@ const AboutSection = ({ lightBg, id, topLine, darkText, headline, leftTopFeature
                                     Familiar with MongoDB and PostgreSQL.
                                 </HighlightPoints>
                                 <HighlightPoints darkText={darkText}>
-                                    Able to work with REST and GrapQL APIs.
+                                    Able to work with REST and GraphQL APIs.
                                 </HighlightPoints>
                                 <HighlightPoints darkText={darkText}>
                                     Some Python experience.
