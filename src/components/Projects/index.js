@@ -31,11 +31,11 @@ const Projects = () => {
                     >
                         <ProjectsCard>
                             <ProjectsIcon src={ColorSwatches} />
-                            <ProjectsH2>Color Swatchs App</ProjectsH2>
+                            <ProjectsH2>Color Swatches App</ProjectsH2>
                             <ProjectsP>
-                                A challenge project completed from the startup <a style={{ fontWeight: 'bold', color: 'blue', textDecoration: 'none' }} href="https://www.helpfulhuman.com/" target="_blank" rel="noreferrer" >Helpful Human</a>. The task was to create a backend to host a list of colors and associated hex values and to create a frontend to display and filter through that data.
-                                <p><strong>Click To Read More</strong></p>
+                                A challenge project completed from the startup <a style={{ fontWeight: 'bold', color: 'blue', textDecoration: 'none' }} href="https://www.helpfulhuman.com/" target="_blank" rel="noreferrer" >Helpful Human</a>.
                             </ProjectsP>
+                            <p className="clickme" ><strong>Click To Read More</strong></p>
                         </ProjectsCard>
                     </ProjectCardLink>
                     <ProjectCardLink
@@ -49,8 +49,8 @@ const Projects = () => {
                             <ProjectsH2>Google Books</ProjectsH2>
                             <ProjectsP>
                                 A Create React App utilizing the Google API to find your favorite books in style!
-                                <p><strong>Click To Read More</strong></p>
                             </ProjectsP>
+                            <p className="clickme"><strong>Click To Read More</strong></p>
                         </ProjectsCard>
                     </ProjectCardLink>
                     <ProjectCardLink
@@ -64,8 +64,8 @@ const Projects = () => {
                             <ProjectsH2>Better Boothang</ProjectsH2>
                             <ProjectsP>
                                 Automate those special, but forgetful, occasions with this NodeJS app using Twilio messaging services.
-                                <p><strong>Click To Read More</strong></p>
                             </ProjectsP>
+                            <p className="clickme"><strong>Click To Read More</strong></p>
                         </ProjectsCard>
                     </ProjectCardLink>
                     <ProjectCardLink
@@ -79,8 +79,8 @@ const Projects = () => {
                             <ProjectsH2>Goal Getter!</ProjectsH2>
                             <ProjectsP>
                                 A simple ReactJS/ExpressJS todo app that breaks goals down into smaller tasks. Users create profiles under Passport Authentication.
-                                <p><strong>Click To Read More</strong></p>
                             </ProjectsP>
+                            <p className="clickme"><strong>Click To Read More</strong></p>
                         </ProjectsCard>
                     </ProjectCardLink>
                     <ProjectCardLink
@@ -94,8 +94,8 @@ const Projects = () => {
                             <ProjectsH2>BookNBeyond Blog</ProjectsH2>
                             <ProjectsP>
                                 A starter blog using NextJS and markdown blog posts aimed at inspiring new developers.
-                                <p><strong>Click To Read More</strong></p>
                             </ProjectsP>
+                            <p className="clickme"><strong>Click To Read More</strong></p>
                         </ProjectsCard>
                     </ProjectCardLink>
                 </ProjectsWrapper>

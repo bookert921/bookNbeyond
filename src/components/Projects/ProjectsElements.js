@@ -36,7 +36,7 @@ export const ProjectsCard = styled.div`
     justify-content: center;
     border-radius: 10px;
     padding: 20px;
-    height: 350px;
+    height: 23rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 
@@ -48,13 +48,13 @@ export const ProjectsCard = styled.div`
 `
 
 export const ProjectsIcon = styled.img`
-    height: 200px;
-    width: 300px;
+    max-height: 200px;
+    max-width: 300px;
     margin-bottom: 10px;
 
     @media screen and (max-width: 400px){
-        height: 125px;
-        width: 200px;
+        max-height: 125px;
+        max-width: 200px;
     }
 `
 

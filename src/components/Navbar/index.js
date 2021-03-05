@@ -23,7 +23,7 @@ import {
 import { animateScroll as scroll } from 'react-scroll';
 
 import Resume from '../../assets/pdfs/BookersDesignResume.pdf';
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/brand-logo__clear.svg';
 
 const Navbar = ({ toggleNav }) => {
     const [scrollNav, setScrollNav] = useState(false);
